@@ -1,0 +1,77 @@
+﻿@model MQTTWebApp.Models.MqttSubscribeViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MQTT Client - Subscribe/Unsubscribe</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">MQTT Client - Subscribe/Unsubscribe</h1>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                Subscribe to Topic
+            </div>
+            <div class="card-body">
+                <form asp-action="Subscribe" method="post" id="subscribeForm">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label for="subscribeTopic" class="form-label">Subscribe to Topic</label>
+                        <input type="text" class="form-control" id="subscribeTopic" name="Topic" value="@Model?.Topic" required>
+                        <span asp-validation-for="Topic" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-success">Subscribe</button>
+                </form>
+                @if (TempData["SubscribeSuccessMessage"] != null)
+                {
+                    <div class="alert alert-success mt-3" id="subscribeSuccessMessage">@TempData["SubscribeSuccessMessage"]</div>
+                }
+                @if (TempData["SubscribeErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger mt-3" id="subscribeErrorMessage">@TempData["SubscribeErrorMessage"]</div>
+                }
+            </div>
+        </div>
+
+        <div class="card mb-4">
+            <div class="card-header">
+                Unsubscribe from Topic
+            </div>
+            <div class="card-body">
+                <form asp-action="Unsubscribe" method="post" id="unsubscribeForm">
+                    @Html.AntiForgeryToken()
+                    <div class="mb-3">
+                        <label for="unsubscribeTopic" class="form-label">Unsubscribe from Topic</label>
+                        <input type="text" class="form-control" id="unsubscribeTopic" name="Topic" value="@Model?.Topic" required>
+                        <span asp-validation-for="Topic" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Unsubscribe</button>
+                </form>
+                @if (TempData["UnsubscribeSuccessMessage"] != null)
+                {
+                    <div class="alert alert-success mt-3" id="unsubscribeSuccessMessage">@TempData["UnsubscribeSuccessMessage"]</div>
+                }
+                @if (TempData["UnsubscribeErrorMessage"] != null)
+                {
+                    <div class="alert alert-danger mt-3" id="unsubscribeErrorMessage">@TempData["UnsubscribeErrorMessage"]</div>
+                }
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Check if success or error message exists
+            if ($('.alert-success').length || $('.alert-danger').length) {
+                // Clear TempData after a short delay
+                setTimeout(function () {
+                    $('.alert-success').fadeOut();
+                    $('.alert-danger').fadeOut();
+                }, 2000); // Adjust the time as needed (5000 milliseconds = 5 seconds)
+            }
+        });
+    </script>
+</body>
+</html>

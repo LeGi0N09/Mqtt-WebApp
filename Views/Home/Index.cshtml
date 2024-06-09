@@ -1,0 +1,31 @@
+﻿@model MQTTWebApp.Models.MqttSubscribeViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MQTT Client</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">MQTT Client</h1>
+        <div class="card mb-4">
+            <div class="card-header">
+                Publish Message
+            </div>
+            <div class="card-body">
+                <a class="btn btn-primary" href="/Home/Publish">Go to Publish Page</a>
+            </div>
+        </div>
+        <div class="card mb-4">
+            <div class="card-header">
+                Subscribe/Unsubscribe
+            </div>
+            <div class="card-body">
+                <a class="btn btn-primary" href="/Home/Subscribe">Go to Subscribe Page</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
