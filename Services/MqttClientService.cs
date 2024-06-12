@@ -23,7 +23,7 @@ namespace MQTTWebApp.Services
 
             _mqttClientOptions = new MqttClientOptionsBuilder()
                 .WithClientId("Client1")
-                .WithTcpServer("192.168.1.8", 1883) // Replace with the broker's IP address
+                .WithTcpServer("192.168.1.7", 1883) // Replace with the broker's IP address
                 .Build();
         }
 

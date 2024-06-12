@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MQTTApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af523b0e6e59bfb1675fc136d4f52cf123c1d578")]
 [assembly: System.Reflection.AssemblyProductAttribute("MQTTApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MQTTApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

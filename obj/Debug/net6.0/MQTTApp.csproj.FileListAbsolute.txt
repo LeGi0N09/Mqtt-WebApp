@@ -6,10 +6,22 @@ E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\MQTTApp.deps.json
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\MQTTApp.runtimeconfig.json
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\MQTTApp.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\MQTTApp.pdb
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Azure.Core.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Azure.Storage.Blobs.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Azure.Storage.Common.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\DotNetty.Buffers.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\DotNetty.Codecs.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\DotNetty.Codecs.Mqtt.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\DotNetty.Common.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\DotNetty.Handlers.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\DotNetty.Transport.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Humanizer.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\MessagePack.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\MessagePack.Annotations.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.Azure.Amqp.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.Azure.Devices.Client.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.Azure.Devices.Shared.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.Build.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\Microsoft.Build.Framework.dll
@@ -68,6 +80,9 @@ E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Configuration.ConfigurationMan
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Drawing.Common.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.IO.Hashing.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Memory.Data.dll
+E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Runtime.Caching.dll
 E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
@@ -232,6 +247,7 @@ E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.csproj.CoreCompileInputs.cach
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.MvcApplicationPartsAssemblyInfo.cache
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.RazorAssemblyInfo.cache
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.RazorAssemblyInfo.cs
+E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.sourcelink.json
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\staticwebassets.build.json
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\staticwebassets.development.json
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\staticwebassets\msbuild.MQTTApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -248,4 +264,3 @@ E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\refint\MQTTApp.dll
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.pdb
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\MQTTApp.genruntimeconfig.cache
 E:\R&D\MQTTWebApp\MQTTApp\obj\Debug\net6.0\ref\MQTTApp.dll
-E:\R&D\MQTTWebApp\MQTTApp\bin\Debug\net6.0\System.Net.WebSockets.WebSocketProtocol.dll

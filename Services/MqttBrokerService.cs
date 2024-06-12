@@ -13,8 +13,8 @@ namespace MQTTWebApp.Services
         {
             var optionsBuilder = new MqttServerOptionsBuilder()
                 .WithDefaultEndpoint()
-                .WithDefaultEndpointBoundIPAddress(IPAddress.Parse("192.168.1.8"))
-                //.WithDefaultEndpointBoundIPAddress(System.Net.IPAddress.Any) // Bind to all available interfaces
+               // .WithDefaultEndpointBoundIPAddress(IPAddress.Parse("192.168.1.7"))
+                .WithDefaultEndpointBoundIPAddress(System.Net.IPAddress.Any) // Bind to all available interfaces
                 .WithDefaultEndpointPort(1883); // Ensure this port is available
 
             var mqttFactory = new MqttFactory();

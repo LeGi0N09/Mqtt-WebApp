@@ -42,9 +42,8 @@ namespace MQTTWebApp.Controllers
                 try
                 {
                     await _mqttClientService.SubscribeAsync(model.Topic);
-                   
                     TempData["SubscribeSuccessMessage"] = $"Subscribed to topic: {model.Topic}";
-                    return RedirectToAction("Subscribe"); // Redirect to the GET action to prevent resubmission
+                    return RedirectToAction("Subscribe");
                 }
                 catch
                 {
@@ -55,7 +54,7 @@ namespace MQTTWebApp.Controllers
             {
                 TempData["SubscribeErrorMessage"] = "Subscription failed: Model state is invalid.";
             }
-            TempData.Keep(); // Ensure TempData is kept for the next request
+            TempData.Keep();
             return View(model);
         }
 
@@ -97,6 +96,10 @@ namespace MQTTWebApp.Controllers
             {
                 try
                 {
+                    // Add timestamp for the published message
+                    model.PublishDateTime = DateTime.Now;
+
+                    // Publish to the custom topic
                     await _mqttClientService.PublishAsync(model.Topic, model.Message);
 
                     TempData["SuccessMessage"] = "Message published successfully!";
@@ -129,7 +132,6 @@ namespace MQTTWebApp.Controllers
             TempData.Keep(); // Ensure TempData is kept for the next request
             return View(model);
         }
-
 
         // New Action to display published messages
         public async Task<IActionResult> ViewMessages()
